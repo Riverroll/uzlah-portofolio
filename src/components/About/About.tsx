@@ -100,7 +100,7 @@ export const About: React.FC = () => {
   ];
 
   // Get just the first project
-  const featuredProject = projects[0];
+  const featuredProject = projects[1];
 
   return (
     <section id="about" className="min-h-screen py-16 bg-base-100">
