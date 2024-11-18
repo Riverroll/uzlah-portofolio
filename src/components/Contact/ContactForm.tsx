@@ -12,7 +12,7 @@ export const ContactForm: React.FC = () => {
       <div className="form-control">
         <textarea className="textarea textarea-bordered h-24" placeholder="Message"></textarea>
       </div>
-      <button className="btn btn-primary w-full">Send Message</button>
+      <button className="btn btn-secondary w-full">Send Message</button>
     </form>
   );
 };

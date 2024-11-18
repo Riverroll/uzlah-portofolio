@@ -7,12 +7,14 @@ import { Contact } from './components/Contact/Contact';
 
 const App: React.FC = () => {
   return (
+    <div data-theme="sunset" className="font-geist">
     <MainLayout>
       <Hero />
       <About />
       <Projects />
       <Contact />
     </MainLayout>
+    </div>
   );
 };
 

@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <p>{project.description}</p>
         <div className="flex flex-wrap gap-2 mt-4">
           {project.technologies.map((tech, index) => (
-            <div key={index} className="badge badge-primary">{tech}</div>
+            <div key={index} className="badge badge-secondary">{tech}</div>
           ))}
         </div>
         <div className="card-actions justify-end mt-4">

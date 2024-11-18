@@ -67,7 +67,7 @@ const AnimatedStat: React.FC<StatProps> = ({
 
   return (
     <div className="stat">
-      <div className="stat-figure text-primary">
+      <div className="stat-figure text-secondary">
         <Icon className="w-8 h-8" />
       </div>
       <div className="stat-title">{title}</div>
