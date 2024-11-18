@@ -132,14 +132,13 @@ export const About: React.FC = () => {
               <div className="space-y-4">
                 <h4 className="text-xl font-semibold">{featuredProject.title}</h4>
                 <ul className="list-disc pl-6 space-y-2 text-base-content/80">
-                  {Array.isArray(featuredProject.achievements) 
-                    ? featuredProject.achievements.map((achievement, index) => (
-                        <li key={index}>{achievement}</li>
-                      ))
-                    : featuredProject.achievements.split('. ').map((achievement, index) => (
-                        <li key={index}>{achievement.trim()}</li>
-                      ))
-                  }
+                  {featuredProject.achievements && featuredProject.achievements.length > 0 ? (
+                    featuredProject.achievements.map((achievement: string, index: number) => (
+                      <li key={index}>{achievement}</li>
+                    ))
+                  ) : (
+                    <li>No achievements listed.</li>
+                  )}
                 </ul>
                 <div className="flex gap-4">
                   {featuredProject.liveUrl && (
