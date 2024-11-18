@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-base-200 flex items-center justify-center px-4 py-8 pt-1">
+    <section id="hero" className="min-h-screen bg-base-200 flex items-center justify-center px-4 py-7 pt-1">
       <div className="max-w-6xl mx-auto px-4 w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Left Column - Profile Information */}
