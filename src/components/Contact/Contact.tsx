@@ -2,6 +2,7 @@ import React from 'react';
 import { Github, Mail, Linkedin } from 'lucide-react';
 import { ContactForm } from './ContactForm';
 import { socialLinks } from '../data/socialLinks';
+import Poster from '../../assets/images/Poster.png'; // Importing the poster image
 
 export const Contact: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ export const Contact: React.FC = () => {
           {/* Poster */}
           <div className="flex justify-center">
             <img
-              src="src\assets\images\Poster.png" // Update this with the correct path
+              src={Poster} // Using the imported poster image
               alt="Poster"
               className="max-w-full rounded-lg shadow-lg"
             />
