@@ -167,8 +167,8 @@ const TypingAnimation = () => {
 
 const LayeredTypingAnimation = () => {
   return (
-    <div className="relative w-full h-[800px] flex items-center justify-center">
-      <div className="relative w-[800px] h-[600px]">
+    <div className="relative w-full h-[800px] flex items-center justify-center overflow-hidden">
+      <div className="relative w-[800px] h-[600px] max-w-full max-h-full">
         <BackgroundTypingAnimation
           opacity="opacity-60" // Increased opacity
           delay={1000}
