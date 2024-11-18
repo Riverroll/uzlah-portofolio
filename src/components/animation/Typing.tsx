@@ -69,9 +69,10 @@ const TypingAnimation = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const phraseSets = [
+    ['Nauval', 'Uzlah', 'Error!'],
     ['npm i daisyui', 'installing...', 'Error!'],
     ['git init', 'git add .', 'git commit -m "first commit"'],
-    ['npm create vite@latest', 'cd my-project', 'npm run dev'],
+    ['npm create vite@latest', 'cd uzlah-portofolio', 'npm run dev'],
     ['docker build .', 'building...', 'Error: no space left on device'],
   ];
 
@@ -174,7 +175,7 @@ const LayeredTypingAnimation = () => {
           delay={1000}
           speed={2000}
           style={{
-            transform: 'translate(-80%, -40%) rotate(-15deg)',
+            transform: 'translate(-70%, -40%) rotate(-15deg)',
             zIndex: 1,
           }}
         />
@@ -197,11 +198,11 @@ const LayeredTypingAnimation = () => {
           }}
         />
         <BackgroundTypingAnimation
-          opacity="opacity-80" // Increased opacity
+          opacity="opacity-90" // Increased opacity
           delay={2000}
           speed={2500}
           style={{
-            transform: 'translate(30%, 20%) rotate(-6deg)',
+            transform: 'translate(30%, 50%) rotate(-6deg)',
             zIndex: 3,
           }}
         />
