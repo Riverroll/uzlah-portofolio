@@ -23,3 +23,20 @@
     text-wrap: balance;
   }
 }
+
+@media (max-width: 768px) {
+  .relative {
+    width: 100vw;  /* Take full viewport width */
+    height: 100vh; /* Take full viewport height */
+  }
+
+  .relative > div {
+    width: 100%;   /* Ensure it doesn't overflow on small screens */
+    height: auto;  /* Adjust height for mobile devices */
+  }
+
+  .absolute {
+    width: 80vw;   /* Make sure the typing box doesn't go beyond the screen */
+    height: 40vh;  /* Adjust the height for mobile screens */
+  }
+}
