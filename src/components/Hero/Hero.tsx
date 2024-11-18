@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from '../../assets/images/Profilepic.jpg';
+import profilePic from '../../assets/images/ProfilePic.jpg';
 import cvFile from '../../assets/CV_Nauval_Uzlah.pdf';
 import TypingAnimation from '../animation/Typing';
 
