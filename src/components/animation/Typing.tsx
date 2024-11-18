@@ -71,7 +71,7 @@ const TypingAnimation = () => {
   const phraseSets = [
     ['Nauval', 'Uzlah', 'Error!'],
     ['npm i daisyui', 'installing...', 'Error!'],
-    ['git init', 'git add .', 'git commit -m "first commit"'],
+    ['git init', 'git add .', 'git commit -m "aaaaaaaaaa"'],
     ['npm create vite@latest', 'cd uzlah-portofolio', 'npm run dev'],
     ['docker build .', 'building...', 'Error: no space left on device'],
   ];
