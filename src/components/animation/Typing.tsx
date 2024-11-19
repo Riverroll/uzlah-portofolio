@@ -189,7 +189,7 @@ const LayeredTypingAnimation = () => {
           }}
         />
         <BackgroundTypingAnimation
-          opacity="opacity-40" // Increased opacity
+          opacity="opacity-70" // Increased opacity
           delay={2000}
           speed={2500}
           style={{
@@ -198,19 +198,19 @@ const LayeredTypingAnimation = () => {
           }}
         />
         <BackgroundTypingAnimation
-          opacity="opacity-90" // Increased opacity
+          opacity="opacity-70" // Increased opacity
           delay={2000}
           speed={2500}
           style={{
             transform: 'translate(30%, 50%) rotate(-6deg)',
-            zIndex: 1,
+            zIndex: 4,
           }}
         />
         <div
           className="absolute w-[400px] h-[200px] bg-gray-900/90 rounded-lg shadow-2xl overflow-hidden backdrop-blur-sm transition-transform duration-1000 ease-out hover:scale-105"
           style={{
             transform: 'rotate(3deg)',
-            zIndex: 4,
+            zIndex: 5,
           }}
         >
           <TypingAnimation />

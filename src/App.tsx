@@ -7,7 +7,7 @@ import { Contact } from './components/Contact/Contact';
 
 const App: React.FC = () => {
   return (
-    <div data-theme="sunset" className="font-geist">
+    <div data-theme="nord" className="font-geist">
     <MainLayout>
       <Hero />
       <About />

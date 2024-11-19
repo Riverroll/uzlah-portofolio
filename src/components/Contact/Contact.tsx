@@ -15,7 +15,7 @@ export const Contact: React.FC = () => {
             <img
               src={Poster} // Using the imported poster image
               alt="Poster"
-              className="max-w-full rounded-lg shadow-lg"
+              className="max-w-full"
             />
           </div>
 
