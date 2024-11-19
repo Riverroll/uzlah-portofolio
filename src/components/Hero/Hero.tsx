@@ -4,7 +4,6 @@ import profilePic2 from '../../assets/images/ProfilePic2.png';
 import cvFile from '../../assets/CV_Nauval_Uzlah.pdf';
 import TypingAnimation from '../animation/Typing';
 
-
 export const Hero: React.FC = () => {
   const [flipped, setFlipped] = useState(false);
 
@@ -29,14 +28,17 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen bg-base-200 flex items-center justify-center px-4 py-7 pt-1">
-      <div className="max-w-6xl mx-auto px-4 w-full">
+    <section 
+      id="hero" 
+      className="min-h-[calc(100vh-4rem)] bg-base-200 flex items-center justify-center px-4"
+    >
+      <div className="max-w-6xl mx-auto w-full py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Left Column - Profile Information */}
           <div className="text-center md:text-left">
-            <div className="avatar mb-6">
+            <div className="avatar mb-6 flex justify-center md:justify-start">
               <div 
-                className={`w-32 md:w-48 lg:w-56 rounded-full ring ring-primary ring-offset-2 transform transition-transform duration-700 ${flipped ? 'rotate-y-180' : ''}`} 
+                className={`w-32 md:w-40 lg:w-48 rounded-full ring ring-primary ring-offset-2 transform transition-transform duration-700 cursor-pointer ${flipped ? 'rotate-y-180' : ''}`} 
                 onClick={handleFlip}
                 style={{
                   perspective: '1000px',
@@ -48,7 +50,6 @@ export const Hero: React.FC = () => {
                   alt="Profile Front" 
                   className={`w-full h-full object-cover absolute backface-hidden`}
                 />
-
                 {/* Back Side */}
                 <img 
                   src={profilePic2} 
@@ -57,20 +58,20 @@ export const Hero: React.FC = () => {
                 />
               </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3">Nauval Uzlah</h1>
-            <p className="text-lg md:text-xl lg:text-2xl mb-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3">Nauval Uzlah</h1>
+            <p className="text-base md:text-lg lg:text-xl mb-6 text-gray-400">
               Full Stack Developer | UI UX Designer | Data Analyst
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
               <button 
-                className="btn btn-primary btn-lg"
+                className="btn btn-primary"
                 onClick={handleDownloadCV}
               >
                 Download CV
               </button>
               <button 
-                className="btn btn-outline btn-lg"
+                className="btn btn-outline"
                 onClick={scrollToContact}
               >
                 Contact Me
@@ -79,8 +80,8 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Right Column - Typing Animation */}
-          <div className="flex justify-center md:justify-end">
-            <div className="w-full max-w-[500px] h-[600px] transform md:translate-x-4">
+          <div className="flex justify-center md:justify-end mt-8 md:mt-0">
+            <div className="w-full h-[400px] md:h-[450px] max-w-[450px]">
               <TypingAnimation />
             </div>
           </div>

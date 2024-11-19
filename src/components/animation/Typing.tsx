@@ -184,12 +184,12 @@ const LayeredTypingAnimation = () => {
           delay={1500}
           speed={2200}
           style={{
-            transform: 'translate(70%, -30%) rotate(12deg)',
+            transform: 'translate(10%, -30%) rotate(12deg)',
             zIndex: 2,
           }}
         />
         <BackgroundTypingAnimation
-          opacity="opacity-80" // Increased opacity
+          opacity="opacity-40" // Increased opacity
           delay={2000}
           speed={2500}
           style={{
@@ -203,7 +203,7 @@ const LayeredTypingAnimation = () => {
           speed={2500}
           style={{
             transform: 'translate(30%, 50%) rotate(-6deg)',
-            zIndex: 3,
+            zIndex: 1,
           }}
         />
         <div

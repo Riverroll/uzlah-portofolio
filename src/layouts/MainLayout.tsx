@@ -107,9 +107,9 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   };
 
   return (
-    <div className="min-h-screen bg-base-100">
+    <div className="min-h-screen bg-base-100 relative overflow-x-hidden w-full">
       {/* Top Navbar */}
-      <div className={`navbar bg-base-100 fixed top-0 w-full z-50 transition-transform duration-300 ${showBottomNav ? '-translate-y-full' : ''}`}>
+      <div className="navbar bg-base-100 fixed top-0 w-full z-50 transition-transform duration-300 max-w-full overflow-x-hidden">
         <div className="navbar-start">
           <div className="dropdown">
             <div 
@@ -202,7 +202,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
       </ul>
 
       {/* Main Content */}
-      <div className="pt-16">{children}</div>
+      <div className="pt-16 w-full max-w-full overflow-x-hidden">{children}</div>
     </div>
   );
 };
