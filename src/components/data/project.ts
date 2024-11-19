@@ -3,6 +3,10 @@ import project1 from '../../assets/images/project1.png';
 import project2 from '../../assets/images/project2.png';
 import project3 from '../../assets/images/project3.png';
 import project4 from '../../assets/images/project4.png';
+import project5 from '../../assets/images/project5.png';
+import project6 from '../../assets/images/project6.png';
+import project7 from '../../assets/images/project7.png';
+// import project8 from '../../assets/images/project8.png';
 import type { Project } from '../../types/index';
 
 export const projects: Project[] = [
@@ -57,5 +61,57 @@ export const projects: Project[] = [
     image: project4,
     githubUrl: "https://github.com/yourusername/project2",
     liveUrl: "https://gemining.vercel.app/"
+  },
+  {
+    title: "D'Restiorante",
+    description: "A restaurant management system to organize products, reservations, transactions, and orders, helping streamline restaurant operations with an efficient digital system.",
+    technologies: ["JavaScript", "MySQL", "React"],
+    achievements: [
+      "Structured menu and reservation management to enhance customer service.",
+      "An ordering system that supports quick transactions and captures customer data for loyalty programs.",
+      "A management dashboard to track daily sales and inventory in real-time."
+    ],
+    image: project5,
+    githubUrl: "https://github.com/yourusername/project2",
+    liveUrl: ""
+  },
+  {
+    title: "Perfect Palette",
+    description: "An e-commerce platform that sells bundled products according to personalized color palettes, with a backend system to manage products, packages, and transaction data.",
+    technologies: ["JavaScript", "MySQL", "React", "Express", "Tailwind"],
+    achievements: [
+      "A personalized color palette recommendation system for customers to enhance the shopping experience.",
+      "Product bundling management to easily provide selection packages.",
+      "An admin dashboard that simplifies the management of products, packages, and order data."
+    ],
+    image: project6,
+    githubUrl: "https://github.com/yourusername/project2",
+    liveUrl: ""
+  },
+  {
+    title: "Codenito Compro UI-UX",
+    description: "An Company profile for codenito, that concludes careers, blog, and portofolio",
+    technologies: ["Figma"],
+    achievements: [
+      "A personalized color palette recommendation system for customers to enhance the shopping experience.",
+      "Product bundling management to easily provide selection packages.",
+      "An admin dashboard that simplifies the management of products, packages, and order data."
+    ],
+    image: project7,
+    githubUrl: "https://github.com/yourusername/project2",
+    liveUrl: "https://www.figma.com/design/HUAvyNc9luJ6AUblvZHAjR/codenito?node-id=179-335&t=fD3VT6ndqfQrlCP9-1"
   }
+  // {
+  //   title: "Codenito Compro UI-UX",
+  //   description: "An Company profile for codenito, that concludes careers, blog, and portofolio",
+  //   technologies: ["Figma"],
+  //   achievements: [
+  //     "A personalized color palette recommendation system for customers to enhance the shopping experience.",
+  //     "Product bundling management to easily provide selection packages.",
+  //     "An admin dashboard that simplifies the management of products, packages, and order data."
+  //   ],
+  //   image: project8,
+  //   githubUrl: "https://github.com/yourusername/project2",
+  //   liveUrl: "https://www.figma.com/design/HUAvyNc9luJ6AUblvZHAjR/codenito?node-id=179-335&t=fD3VT6ndqfQrlCP9-1"
+  // }
 ];
